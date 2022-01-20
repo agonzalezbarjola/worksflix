@@ -1,0 +1,61 @@
+//FONTS
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+//VARIABLES - PALETTE
+body {
+  font-family: "Roboto", sans-serif;
+  --text-color: rgb(31, 31, 31);
+  --background: whitesmoke;
+  --texthero: rgb(17, 17, 17);
+  --stroke: #5b3685;
+  a {
+    margin-right: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #7d0d99;
+  }
+}
+
+body.dark-theme {
+  --text-color: whitesmoke;
+  --background: rgb(17, 17, 17);
+  --texthero: rgb(226, 226, 226);
+  --stroke: #af1ca8;
+
+  a {
+    margin-right: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+  }
+}
+//GLOBAL STYLES
+* {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+  transition: background 1s ease-in-out, color 1s ease-in-out;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 10px;
+  border: 2px solid black;
+}
