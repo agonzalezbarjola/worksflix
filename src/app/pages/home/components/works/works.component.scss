@@ -11,6 +11,19 @@
     .work-gallery {
       display: flex;
       flex-direction: row;
+      overflow-x: scroll;
+      margin: 40px;
+       
+      &::-webkit-scrollbar{
+        height: 8px;
+
+      }
+
+      &::-webkit-scrollbar-thumb{
+        height: 5px;
+        background-color: lightgray;
+        border-radius:50px;
+      }
       
       img {
         padding: 5px;
